@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常见的网页布局综合案例</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .top {
+            margin: 10px;
+            margin-top: 11px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #ECEDF8;
+            border: dashed 3px #D8DADE;
+            color: grey;
+        }
+
+        .banner {
+            width: 994px;
+            height: 150px;
+            margin: 5px auto;
+            line-height: 150px;
+            text-align: center;
+            background-color: #ECEDF8;
+            border: dashed 3px #D8DADE;
+            color: grey;
+        }
+
+        .box-1 {
+            height: 100px;
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .box-1 li {
+            height: 100px;
+            width: 236.5px;
+            /* 每个盒子宽度 */
+            background-color: #ECEDF8;
+            float: left;
+            border: dashed 3px #D8DADE;
+            margin-right: 10px;
+        }
+
+        .box-1 ul>li:hover {
+            box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        .box-1 .last {
+            margin-right: 0;
+        }
+
+        .box-2 {
+            height: 200px;
+            width: 1000px;
+            margin: 0 auto;
+            margin-top: 11px;
+        }
+
+        .box-2 li {
+            width: 236.5px;
+            height: 200px;
+            background-color: #ECEDF8;
+            float: left;
+            margin-right: 10px;
+            border: 3px dashed #D8DADE;
+        }
+
+        .box-2 ul>li:hover {
+            box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+        }
+
+
+        .box-2 .last-2 {
+            margin-right: 0;
+        }
+
+
+        .footer {
+            margin: 10px;
+            margin-top: 11px;
+            height: 180px;
+            line-height: 180px;
+            text-align: center;
+            background-color: #ECEDF8;
+            border: dashed 3px #D8DADE;
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">top</div>
+    <div class="banner">banner</div>
+    <div class="box-1">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="last"></li>
+        </ul>
+    </div>
+    <div class="box-2">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="last-2"></li>
+        </ul>
+    </div>
+    <div class="footer">footer</div>
+</body>
+
+</html>
